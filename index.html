@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClearLink — AI-Native Software Studio</title>
+<meta name="description" content="ClearLink is an AI-native software studio building games, business software, and consumer apps — powered by an end-to-end AI production pipeline on NVIDIA hardware.">
+<style>
+  :root {
+    --bg: #0d1117; --bg2: #131b26; --panel: rgba(255,255,255,0.045);
+    --line: rgba(118,185,0,0.25); --green: #76b900; --text: #c3ccd6;
+    --head: #ffffff; --muted: #9aa5b1; --dim: #4a5568;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', -apple-system, Arial, sans-serif;
+    background: linear-gradient(160deg, var(--bg) 0%, var(--bg2) 60%, #0f1a14 100%);
+    color: var(--text); min-height: 100vh; line-height: 1.6;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .logo { font-size: 22px; font-weight: 700; letter-spacing: 0.08em; color: var(--head); text-decoration: none; }
+  .logo span { color: var(--green); }
+  nav { display: flex; justify-content: space-between; align-items: center; }
+  nav .links a { color: var(--muted); text-decoration: none; margin-left: 28px; font-size: 15px; }
+  nav .links a:hover { color: var(--green); }
+  .hero { padding: 110px 0 90px; }
+  .kicker { color: var(--green); font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 600; margin-bottom: 18px; }
+  h1 { font-size: clamp(40px, 6vw, 68px); font-weight: 700; color: var(--head); letter-spacing: -0.01em; line-height: 1.1; }
+  .hero p { font-size: 21px; color: var(--muted); max-width: 720px; margin-top: 24px; }
+  section { padding: 70px 0; }
+  h2 { font-size: 32px; color: var(--head); margin-bottom: 12px; }
+  h2 .tick { color: var(--green); }
+  .section-sub { color: var(--muted); max-width: 700px; margin-bottom: 42px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 30px 28px;
+  }
+  .card .tag { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); font-weight: 600; }
+  .card h3 { color: var(--head); font-size: 22px; margin: 10px 0 12px; }
+  .card p { font-size: 15.5px; color: var(--text); }
+  .card .status { display: inline-block; margin-top: 16px; font-size: 12.5px; color: var(--muted); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 3px 12px; }
+  .pipeline { background: rgba(118,185,0,0.05); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .pipeline ul { list-style: none; margin-top: 8px; }
+  .pipeline li { padding-left: 26px; position: relative; margin-bottom: 12px; font-size: 16px; }
+  .pipeline li::before { content: "▸"; color: var(--green); position: absolute; left: 0; }
+  footer { padding: 56px 0 64px; color: var(--dim); font-size: 14px; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--green); }
+  .contact-line { color: var(--muted); font-size: 16px; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#">CLEAR<span>LINK</span></a>
+      <div class="links">
+        <a href="#products">Products</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">AI-Native Software Studio</div>
+    <h1>Small team.<br>Multi-team output.</h1>
+    <p>ClearLink builds games, business software, and consumer apps through an end-to-end AI production pipeline — local model inference, multi-agent orchestration, and purpose-built tooling, running on NVIDIA hardware.</p>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <h2>Products<span class="tick">.</span></h2>
+    <p class="section-sub">Three product lines, one production pipeline.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">Games</div>
+        <h3>Elemental Forge</h3>
+        <p>An open-world action-RPG built in Unreal Engine 5 — creature companions, elemental magic, solo and co-op play. Authored with World Builder, our custom in-engine environment toolkit for terrain sculpting, semantic surface painting, and modular world assembly.</p>
+        <span class="status">In development</span>
+      </div>
+      <div class="card">
+        <div class="tag">Business Software</div>
+        <h3>NextBid</h3>
+        <p>Bid intelligence for government procurement. Automated engines aggregate and analyze opportunities across federal and municipal sources, turning fragmented postings into an actionable pipeline for contractors.</p>
+        <span class="status">In production</span>
+      </div>
+      <div class="card">
+        <div class="tag">Consumer Apps</div>
+        <h3>Layover</h3>
+        <p>Interest-based matchmaking for travelers in a new city. Pick what you're into — nightlife, golf, music, movies — and match with local guides who share it. Privacy-first: photos and chat unlock only after both sides accept.</p>
+        <span class="status">In development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pipeline" id="approach">
+  <div class="wrap">
+    <h2>The AI production line<span class="tick">.</span></h2>
+    <p class="section-sub">Our differentiator isn't any single product — it's how they're built. One operator, an AI workforce, and studio-owned silicon.</p>
+    <ul>
+      <li><strong style="color:var(--head)">Local model fleet</strong> — code, vision, and reasoning models served around the clock on NVIDIA DGX hardware. Private, fast, always on.</li>
+      <li><strong style="color:var(--head)">Multi-agent orchestration</strong> — coordinated AI agents handle world building, asset pipelines, data engineering, QA, and infrastructure.</li>
+      <li><strong style="color:var(--head)">Knowledge-graph canon</strong> — ClearLink Studio connects product design canon directly to builds via the Model Context Protocol, so every agent works from one source of truth.</li>
+    </ul>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-line">Michael Johnson, Founder &nbsp;·&nbsp; <a href="mailto:michael@clearlink.team">michael@clearlink.team</a></div>
+    <div>© 2026 ClearLink. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
