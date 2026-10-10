@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://www.clearlink.team/hatchlings/">
 <meta property="og:title" content="Hatchlings of Heartland: free coloring pages">
 <meta property="og:description" content="Four little drakes, four free printable coloring pages. Big, friendly lines for ages 5-8.">
-<meta property="og:image" content="https://www.clearlink.team/hatchlings/img/page-terra.png">
+<meta property="og:image" content="https://www.clearlink.team/hatchlings/img/cover.jpg">
 <meta property="og:type" content="website">
 <style>
   :root { --ink:#1f2a37; --muted:#5b6774; --line:#e3e8ee; --accent:#2f7d5b; --accent-ink:#ffffff; --bg:#fbfaf6; --card:#ffffff; }
@@ -20,6 +20,8 @@
   .logo { font-weight:700; letter-spacing:.08em; color:var(--ink); text-decoration:none; }
   .logo span { color:var(--accent); }
   .crumb { color:var(--muted); font-size:14px; }
+  .banner { width:100%; max-height:min(52vh, 560px); overflow:hidden; background:#cfe3f5; }
+  .banner img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 40%; }
   .hero { padding:48px 0 32px; display:grid; grid-template-columns:1.2fr 1fr; gap:32px; align-items:center; }
   .hero h1 { font-size:clamp(30px,5vw,46px); line-height:1.1; margin-bottom:14px; }
   .hero p { font-size:18px; color:var(--muted); margin-bottom:22px; }
@@ -56,14 +58,17 @@
   <span class="crumb">Hatchlings of Heartland</span>
 </div></header>
 
+<div class="banner"><img src="img/banner-heartland.jpg" srcset="img/banner-heartland-800.jpg 800w, img/banner-heartland.jpg 1600w" sizes="100vw" alt="Heartland: a windmill on a green hill above a small village" width="1600" height="900" fetchpriority="high"></div>
 <main class="wrap">
   <div class="hero">
     <div>
       <h1>Meet the Hatchlings of Heartland</h1>
       <p>Four little drakes. Big, friendly coloring pages for ages 5 to 8. Start with four free pages, one for each hatchling.</p>
-      <p class="soon">The free sample is being updated (one of the four pages is being redrawn) and will be back shortly.</p>
+      <a class="btn" href="free-sample-4-drakes.pdf" download>Download the free sample (PDF)</a>
+      <a class="btn ghost" href="free-sample-4-drakes-PNG.zip" download>PNG pages (ZIP)</a>
+      <p class="small">US Letter, 300 DPI, prints at home. Personal use for your family or classroom; please do not resell or redistribute.</p>
     </div>
-    <img src="img/page-terra.png" alt="Hatchlings of Heartland coloring page preview" width="900" height="900">
+    <img src="img/cover.jpg" alt="Hatchlings of Heartland coloring page preview" width="900" height="900">
   </div>
 
   <section id="hatchlings">
@@ -75,7 +80,7 @@
   <h3>Terra</h3><p class="sub">The earth drake</p><p>Terra&#x27;s pages are woodland adventures: trails, trees, meadows and the creatures that live there.</p>
 </article>
 <article class="card">
-  <div class="placeholder">New pages for Aqua are being drawn</div>
+  <img src="img/page-aqua.png" alt="Coloring page preview: Aqua, the water drake" loading="lazy" width="280" height="362">
   <h3>Aqua</h3><p class="sub">The water drake</p><p>Aqua&#x27;s pages are ponds, streams and lakes, with plenty of splashing.</p>
 </article>
 <article class="card">
